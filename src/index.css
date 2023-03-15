@@ -1,0 +1,195 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow: hidden;
+        background: white;
+        color: #4F4F4F;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+        max-height: 100vh;
+        height: 100vh;
+    }
+    
+    #root {
+        /* border: 1px solid red; */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .app {
+        padding: 36px 32px;
+        width: auto;
+        min-width: 300px;
+        max-width: 400px;
+        max-height: 457px;
+        height: auto;
+        margin: auto;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .header .main--title {
+        margin: auto;
+        /* border: 1px solid red; */
+        text-align: center;
+    }
+    
+    .header .main--p {
+        margin: 10px auto;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .main--p+div {
+        margin-bottom: 20px;
+        margin-top: 25px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: #F6F8FB;
+        height: 100px;
+        height: 220px;
+        border-radius: 12px;
+        border: 2.5px dashed #97BEF4;
+        cursor: pointer
+    }
+    
+    .main--img-container img {
+        width: 50%;
+        /* height: 100%; */
+    }
+    
+    .main--img-container p,
+    .main--or {
+        text-align: center;
+        font-size: 14px;
+        color: #BDBDBD;
+    }
+    
+    .btn {
+        width: fit-content;
+        display: block;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        background: #2F80ED;
+        border-radius: 8px;
+        padding: 0.5em 1em;
+        color: white;
+        margin: auto;
+        margin-top: 10px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    .main--img-container .img-uploaded {
+        /* border: 4px solid black; */
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: inherit;
+    }
+    
+    .error {
+        background-color: rgb(247, 137, 129);
+        color: white;
+        padding: 0.5em 1em;
+        border-radius: 10px;
+        font-size: 12px;
+        /* display: none; */
+    }
+    
+    #bar {
+        display: block;
+        margin: auto;
+        /* width: minmax(auto, 340px); */
+        max-width: 340px;
+        width: auto;
+        /* width: 340px; */
+    }
+    
+    .uploadProgress .main--title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    
+    .okIcon {
+        height: 35px;
+        width: 35px;
+        display: block;
+        margin: auto;
+    }
+    
+    .sss {
+        font-size: 20px;
+        color: #4F4F4F;
+        font-weight: 500;
+        margin: auto;
+        text-align: center;
+        margin: 10px auto;
+    }
+    
+    .finalImage {
+        /* width: ; */
+        min-height: 200px;
+        max-width: 338px;
+        width: auto;
+        border-radius: 12px;
+        margin: auto;
+    }
+    
+    .finalImageContainer {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        margin: 10px auto;
+        margin-bottom: 20px;
+    }
+    
+    .divCopy {
+        height: 40px;
+        width: auto;
+        background: #F6F8FB;
+        border: 1px solid #E0E0E0;
+        border-radius: 8px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        /* padding: auto 15px; */
+        padding-left: 5px;
+    }
+    
+    .divCopy p {
+        max-width: 70%;
+        width: 70%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 13px;
+        text-align: center;
+        letter-spacing: -0.035em;
+        color: #4F4F4F;
+        overflow-y: ell;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .divCopy .btn {
+        min-width: 30%;
+        height: 100%;
+        font-size: 14px;
+        margin-top: 0;
+    }

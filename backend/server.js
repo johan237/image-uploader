@@ -1,6 +1,4 @@
-// import connectDB from './config/db.js'
 import errorHandler from './middleware/errorMiddleware.js'
-// errorHandler
 import express from 'express'
 import dotenv from 'dotenv'
 import { v2 as cloudinary } from 'cloudinary'
@@ -15,7 +13,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
-    // connectDB()
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

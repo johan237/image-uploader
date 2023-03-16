@@ -35,7 +35,7 @@ async function handleFileButton(event){
 
   async function uploadCloudinary(filename){
     console.log('running upload cloudinary')  
-    const res2 = await axios.post('http://localhost:5000/api/image',{ imagePath: filename},{
+    const res2 = await axios.post('https://api-imageuploader.onrender.com/api/image',{ imagePath: filename},{
         onUploadProgress:(data)=>{setTimeout(()=>{
           setProgression(data.loaded/data.total * 100)
         },500)}
